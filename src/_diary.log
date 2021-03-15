@@ -17,6 +17,13 @@ npm start
 
 rm -rf node_modules
 
+cd /Users/Dicekay/projects/pcma/github/tutorial/react-app
+
+git add a b 
+git commit a b -m "test"
+git push
+
+
 ------
 
 package.json

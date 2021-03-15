@@ -8,6 +8,12 @@ export default class AppClass extends Component {
     return (
       <div className="AppClass">
         <p> Hello [{this.props.name}] printing from AppClass.js </p>
+
+        <ul>
+          <li>{this.props.name}</li>
+          <li>{this.props.age}</li>
+          <li>{this.props.sex}</li>
+        </ul>
       </div>
     );
   }
