@@ -1,0 +1,34 @@
+
+
+https://wings.msn.to/index.php//A03/WGSJSF004/
+
+------
+0316
+------
+
+
+
+create-react-app react-app
+cd react-app
+npm start
+
+
+package.json
+  "scripts": {
+    "start": "react-scripts start",
+
+
+index.html (<div id="root"></div>) 
+  -> index.js  (document.getElementById('root'))
+  -> App.js     <App />
+
+
+render(comp, target)
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
