@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
 
-class AppClass extends Component {
+// class
+
+export default class AppClass extends Component {
   render() {
     return (
       <div className="AppClass">
-        <p> printing from AppClass.js </p>
+        <p> Hello [{this.props.name}] printing from AppClass.js </p>
       </div>
     );
   }
 }
-
-export default AppClass;
