@@ -1,14 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+//import App from "./App";
+import AppFunctional from "./AppFunctional";
+import AppClass from "./AppClass";
+
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppFunctional />
   </React.StrictMode>,
   document.getElementById("root")
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <AppClass />
+  </React.StrictMode>,
+  document.getElementById("root1")
 );
 
 ReactDOM.render(
