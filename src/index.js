@@ -1,33 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-//import App from "./App";
-import AppFunctional from "./AppFunctional";
-import AppClass from "./AppClass";
+import App from "./App";
+//import AppFunctional from "./AppFunctional";
+//import AppClass from "./AppClass";
 
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppFunctional />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
-
-ReactDOM.render(
-  <React.StrictMode>
-    <AppClass />
+    <App />
   </React.StrictMode>,
   document.getElementById("root1")
-);
-
-ReactDOM.render(
-  <div>
-    <h3>hello world from ReactDom.render in index.js</h3>
-    {/* comment */}
-    <h2>hello again </h2>
-  </div>,
-  document.getElementById("test")
 );
 
 // If you want to start measuring performance in your app, pass a function
