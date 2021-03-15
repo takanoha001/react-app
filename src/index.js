@@ -14,6 +14,8 @@ ReactDOM.render(
 ReactDOM.render(
   <div>
     <h3>hello world from ReactDom.render in index.js</h3>
+    {/* comment */}
+    <h2>hello again </h2>
   </div>,
   document.getElementById("test")
 );
