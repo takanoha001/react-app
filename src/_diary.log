@@ -12,6 +12,12 @@ create-react-app react-app
 cd react-app
 npm start
 
+npm install
+npm start
+
+rm -rf node_modules
+
+------
 
 package.json
   "scripts": {
