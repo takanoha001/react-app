@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import PropTypes from "prop-types";
 
 // class
 
@@ -18,3 +19,15 @@ export default class AppClass extends Component {
     );
   }
 }
+
+AppClass.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number,
+  sex: PropTypes.oneOf(["male", "female", "unknown"]),
+};
+
+AppClass.defaultProps = {
+  name: "unknown",
+  age: 0,
+  sex: "unknown",
+};
