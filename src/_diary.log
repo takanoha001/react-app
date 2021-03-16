@@ -69,3 +69,17 @@ only chrome can tell you whether it is a warning or not.
 converting from array to a list with 
 {articles.map((article) => <MyArticle {...article}>})}
 
+index.js:1 Warning: Each child in a list should have a unique "key" prop.
+
+when a new item (eg. x) is added to a list (eg. a,b,c) and render the package
+we need to render the existing list. 
+
+present: a,b,c
+future: a,b,c, x <== only x is new so in theory only x needs to be updated
+
+to do this we need to use "key"
+and display new item with new.gif
+
+
+
+

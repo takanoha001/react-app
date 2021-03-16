@@ -10,16 +10,16 @@ export default class App1 extends Component {
         url: "google.com",
         title: "book1 ",
         description: "abcd",
-        isNew: true,
+        isNew: false,
       },
       {
-        url: "google.com",
+        url: "google2.com",
         title: "book2",
         description: "dsa",
-        isNew: true,
+        isNew: false,
       },
       {
-        url: "google.com",
+        url: "google3.com",
         title: "book3",
         description: "xyz",
         isNew: true,
@@ -31,7 +31,7 @@ export default class App1 extends Component {
         <p>I am at App1 class </p>
         <dl>
           {books.map((book) => (
-            <MyArticle {...book} />
+            <MyArticle {...book} key={book.url} />
           ))}
         </dl>
       </div>
