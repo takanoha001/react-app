@@ -47,8 +47,8 @@ ReactDOM.render(
 
 passing this.props to component 
 
+[PropTypes]
 
-PropTypes
 PropTypes.string：文字列型
 PropTypes.symbol：シンボル型
 PropTypes.number：数値型
@@ -71,6 +71,7 @@ converting from array to a list with
 
 index.js:1 Warning: Each child in a list should have a unique "key" prop.
 
+[New item and key]
 when a new item (eg. x) is added to a list (eg. a,b,c) and render the package
 we need to render the existing list. 
 
@@ -80,6 +81,14 @@ future: a,b,c, x <== only x is new so in theory only x needs to be updated
 to do this we need to use "key"
 and display new item with new.gif
 
+[STATE]
+event handling and state
 
+everytime a character is inserted onChange() is called
 
+MyState.js setInterval - every second it updates clock 
 
+handleChange(e) { to update
+onChange
+this.show
+this.handleChange
