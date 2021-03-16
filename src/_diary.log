@@ -64,3 +64,8 @@ PropTypes.string.isRequired
 
 only chrome can tell you whether it is a warning or not.
 
+<dl> definition list
+
+converting from array to a list with 
+{articles.map((article) => <MyArticle {...article}>})}
+
