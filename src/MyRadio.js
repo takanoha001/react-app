@@ -12,13 +12,15 @@ export default class MyRadio extends Component {
   }
 
   handleChange(e) {
+    console.log(`handleChange(): ${this.state.sex}`);
+
     this.setState({
       [e.target.name]: e.target.value,
     });
   }
 
   show() {
-    console.log(`sex: ${this.state.sex}`);
+    console.log(`show(): ${this.state.sex}`);
   }
 
   render() {
