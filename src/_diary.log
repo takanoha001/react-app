@@ -88,7 +88,13 @@ everytime a character is inserted onChange() is called
 
 MyState.js setInterval - every second it updates clock 
 
+
 handleChange(e) { to update
-onChange
-this.show
-this.handleChange
+onChange, onClick
+this.show, this.handleChange
+
+`execute`     console.log(`name: ${this.state.name}`);
+
+
+
+
