@@ -6,16 +6,32 @@ import App1 from "./App1";
 import App2 from "./App2";
 
 //import AppFunctional from "./AppFunctional";
-//import AppClass from "./AppClass";
+import AppClass from "./AppClass";
 
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App2 />
+    <App />
   </React.StrictMode>,
   document.getElementById("root1")
 );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <AppClass name="test" sex="male" age="24" />
+//     <AppClass name="test1" sex="female" age="33" />
+//   </React.StrictMode>,
+//   document.getElementById("root1")
+// );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App2 />
+//     <AppClass />
+//   </React.StrictMode>,
+//   document.getElementById("root1")
+// );
 
 /**
 ReactDOM.render(
