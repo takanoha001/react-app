@@ -1,13 +1,14 @@
-
-
 https://wings.msn.to/index.php//A03/WGSJSF004/
+
+------
+0330
+------
+added state machine code
+
 
 ------
 0316
 ------
-
-
-
 create-react-app react-app
 cd react-app
 npm start
@@ -94,6 +95,30 @@ onChange, onClick
 this.show, this.handleChange
 
 `execute`     console.log(`name: ${this.state.name}`);
+
+[lifecycle method]
+component, props, state
+
+mounting -> constructor -> render > componentDidMount -> componentDidCatch 
+updating -> shouldComponentUpdate -> render -> componentDidUpdate -> componentDidCatch
+unmounting -> componentWillUnMOunt -> componentDidCatch 
+
+
+mounting: create component, insert doc tree
+updating: props/state get updated
+unmounting: when component is removed from the doc tree
+error handling
+
+
+only constructor can use this.state
+others can use setState()
+
+render() - must have function
+
+
+
+
+
 
 
 
