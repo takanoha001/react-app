@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MyNew from "./MyNew";
+import MyNew from "../component/MyNew";
 
 export default class MyArticle extends Component {
   // add a gif if it is a new item
@@ -12,6 +12,7 @@ export default class MyArticle extends Component {
   render() {
     return (
       <React.Fragment>
+        <h2>MyArticle.js</h2>
         <dt>
           <a href={this.props.url}>{this.props.title}</a>
           {this.renderIfNew(this.props.isNew)}

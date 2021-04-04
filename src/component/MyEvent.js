@@ -8,6 +8,7 @@ export default class MyEvent extends Component {
 
   show(e) {
     const t = e.type;
+    console.log("show...");
     console.log(t); //click
     setTimeout(() => {
       console.log(t);
@@ -19,6 +20,8 @@ export default class MyEvent extends Component {
   render() {
     return (
       <form>
+        <h2>MyEvent.js</h2>
+        <p>MyEvent... </p>
         <label htmlFor="txtName">Name: </label>
         <input id="txtName" type="text" onChange={this.show} />
         <button type="button" onClick={this.show.bind(this)}>

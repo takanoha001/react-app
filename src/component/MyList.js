@@ -30,6 +30,7 @@ export default class MyList extends Component {
   render() {
     return (
       <form>
+        <h2>MyList.js</h2>
         <label htmlFor="fruit">fruit: </label>
         <br />
         <select

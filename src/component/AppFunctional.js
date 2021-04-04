@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "../App.css";
 
 //do not use functional component because it cannot use State or Lifecycle
 
@@ -10,6 +10,7 @@ import "./App.css";
 function AppFunctional() {
   return (
     <div className="AppFunctional">
+      <h2>AppFunctional.js</h2>
       <p>printing from AppFunctiona.js</p>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class MyTextarea extends Component {
+export default class MyTextareaOut extends Component {
   constructor(props) {
     super(props);
 
@@ -24,6 +24,7 @@ export default class MyTextarea extends Component {
   render() {
     return (
       <form>
+        <h2>MyTextareaOut.js</h2>
         <label htmlFor="memo">memo: </label>
         <br />
         <textarea
@@ -35,9 +36,6 @@ export default class MyTextarea extends Component {
           onChange={this.handleChange}
         ></textarea>
         <br />
-        <button type="button" onClick={this.show}>
-          send
-        </button>
       </form>
     );
   }

@@ -36,6 +36,7 @@ export default class MyForm extends Component {
   render() {
     return (
       <form>
+        <h2>MyForm.js</h2>
         {/*2. state apply */}
         <div>
           <label htmlFor="name">name: </label>

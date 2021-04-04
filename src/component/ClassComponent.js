@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "../App.css";
 import PropTypes from "prop-types";
 
 export default class ClassComponent extends React.Component {
@@ -22,7 +22,7 @@ export default class ClassComponent extends React.Component {
   render() {
     return (
       <div>
-        <h2>This is ClassComponent</h2>
+        <h2>ClassComponent.js</h2>
         <div>
           countA: {this.state.countA}
           <button onClick={this.onClickA.bind(this)}>Click!</button>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import img from "./stateDiagram.jpg";
+import img from "../images/stateDiagram.jpg";
 
 const States = {
   INIT: 0,
@@ -14,6 +14,21 @@ class TestStateMachine extends Component {
     current: States.INIT,
   };
   transition(to) {
+    //here process and it it fails then go to idle state
+    switch (to) {
+      case States.CONNECTED:
+        alert("to be connected");
+
+        alert("but it fails... setting to idle");
+
+        to = States.IDLE;
+
+        break;
+      default:
+        // alert("default");
+        break;
+    }
+
     this.setState({ current: to });
   }
   render() {
@@ -31,7 +46,12 @@ class TestStateMachine extends Component {
   }
 
   renderDiagram() {
-    return <img src={img} alt="PCMA. logo" />;
+    return (
+      <div>
+        <h2>TestStateMachine.js</h2>
+        <img src={img} alt="PCMA. logo" />
+      </div>
+    );
   }
 
   renderInit() {
@@ -78,7 +98,9 @@ class TestStateMachine extends Component {
       <div>
         {this.renderDiagram()}
         <p>@FINISH - end of app</p>
-        {/* <button onClick={() => this.transition(States.INIT)}>Click me</button> */}
+        <button onClick={() => this.transition(States.INIT)}>
+          Go back to init
+        </button>
       </div>
     );
   }

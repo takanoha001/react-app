@@ -26,6 +26,7 @@ export default class MyRadio extends Component {
   render() {
     return (
       <form>
+        <h2>MyRadio.js</h2>
         <fieldset>
           <legend>sex</legend>
 

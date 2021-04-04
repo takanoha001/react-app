@@ -8,7 +8,7 @@ const FunctionalComponent = (props) => {
 
   return (
     <div>
-      <h2>This is a FuncionalComponent</h2>
+      <h2>FunctionalComponent.js</h2>
       <div>
         countA: {countA} <button onClick={onClickHandlerA}>Click!</button>
       </div>

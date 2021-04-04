@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MyArticle from "./MyArticle.js";
+import MyArticle from "./component/MyArticle.js";
 import PropTypes from "prop-types";
 
 // class
