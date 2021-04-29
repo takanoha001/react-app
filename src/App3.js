@@ -13,7 +13,7 @@ const App3 = () => {
       <Larry />
       <Curly />
 
-      <div style={{ marginTop: 50 }}>
+      {/* <div style={{ marginTop: 50 }}>
         Larry, Curly, Moe, and Curly Jr. all display the <i>same</i>, shared,
         global variable - "count". When it gets updated, the display is
         refreshed <i>everywhere</i>.
@@ -37,7 +37,7 @@ const App3 = () => {
         Once that custom Hook is loaded into the global object, all other
         components merely need to import "global" in order to have access to
         useCounter()'s state variables and update methods.
-      </div>
+      </div> */}
     </>
   );
 };

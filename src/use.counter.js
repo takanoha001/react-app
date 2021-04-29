@@ -2,14 +2,16 @@ import { useState } from "react";
 
 export default function useCounter() {
   const [count, setCount] = useState(0);
-
   const decrement = () => setCount(count - 1);
-
   const increment = () => setCount(count + 1);
-
   const invert = () => setCount(count * -1);
-
   const reset = () => setCount(0);
+
+  const [text, setText] = useState("default text");
+
+  const [message, setMessage] = useState("default message");
+
+  const writeText = (txt) => setText(txt);
 
   return {
     count,
@@ -17,5 +19,11 @@ export default function useCounter() {
     increment,
     invert,
     reset,
+
+    text,
+    writeText,
+
+    message,
+    setMessage,
   };
 }

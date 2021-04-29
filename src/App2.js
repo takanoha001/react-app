@@ -16,6 +16,7 @@ import StateHook from "./component/StateHook.js";
 import FunctionalComponent from "./component/FunctionalComponent.js";
 import TestStateMachine from "./component/TestStateMachine";
 import TestSystem from "./component/TestSystem";
+import MyInterval from "./component/MyInterval";
 
 // class
 export default class App2 extends Component {
@@ -23,7 +24,9 @@ export default class App2 extends Component {
     return (
       <div className="App2">
         <p>I am at App2 class </p>
+        <MyRadio />
 
+        {/* <MyInterval /> 
         <Calculator />
         <MyTextarea />
         <MyTextareaOut />
@@ -41,6 +44,7 @@ export default class App2 extends Component {
         <FunctionalComponent countA={5} countB={20} propsOnlyValue={1000}>
           {"functinoal compo "}
         </FunctionalComponent>
+        */}
       </div>
     );
   }

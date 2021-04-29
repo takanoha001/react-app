@@ -21,6 +21,7 @@ export default class TemperatureInput extends React.Component {
     const scale = this.props.scale;
     return (
       <fieldset>
+        <h2>TempeartureInput.js</h2>
         <legend>Enter temperature in {scaleNames[scale]}:</legend>
         <input value={temperature} onChange={this.handleChange} />
       </fieldset>
