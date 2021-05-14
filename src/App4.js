@@ -65,11 +65,6 @@ const App4 = () => {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
-          <Grid container spacing={4}>
-            <Grid item><Card className={classes.card}></Grid>
-          </Grid>
-        </Container>
       </main>
     </React.Fragment>
   );
