@@ -4,6 +4,7 @@ import App2 from "./App2";
 import App1 from "./App1";
 import App3 from "./App3";
 import App4 from "./App4";
+import App5 from "./App5";
 
 // class
 
@@ -15,7 +16,7 @@ export default class App extends Component {
       //   <App2 />
       // </div>
       <div className="App">
-        <App4 />
+        <App5 />
       </div>
     );
   }
